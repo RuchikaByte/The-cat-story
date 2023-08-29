@@ -1,0 +1,155 @@
+/* Reset default margin and padding */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Apply styles specific to different screen sizes using media queries */
+@media screen and (max-width: 768px) {
+    /* Styles for screens up to 768px width (e.g., tablets) */
+    .container {
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Styles for screens up to 480px width (e.g., mobile devices) */
+    .container {
+        padding: 0.5rem;
+    }
+    .quote {
+        font-size: 1rem;
+    }
+}
+.header {
+    background: url('./catto.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 6rem 0;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.single-image {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.single-image img {
+    max-width: 30%;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.container h1,
+.container h2 {
+    margin-bottom: 1rem; /* Adjust the spacing as needed */
+}
+
+.single-image:hover img {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.image-description {
+    font-style: italic;
+    margin-top: 0.5rem;
+}
+.container .first-paragraph {
+    margin-bottom: 2em; 
+}
+.image-gallery {
+    overflow: hidden;
+    position: relative;
+    margin: 2rem 0;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    max-width: 100%; /* Limit the width of the gallery */
+    max-height: 400px; /* Limit the height of the gallery */
+}
+
+.image-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Full width of each slide */
+    height: 100%; /* Full height of the gallery */
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-slide img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.collage-container {
+    display: flex;
+    justify-content: center;
+    margin: 3rem 0;
+}
+
+.collage {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    gap: 1rem;
+}
+
+.collage-item {
+    flex: 1 1 200px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.collage-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.collage-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+}
+.footer {
+    text-align: center;
+    margin-top: 2rem; 
+}
+
+.quote {
+    font-style: italic;
+    color: #2a47bb; 
+    font-size: 1.2rem; 
+}
